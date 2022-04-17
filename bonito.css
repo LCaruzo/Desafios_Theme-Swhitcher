@@ -1,0 +1,39 @@
+:root {
+    --dark: #292C35;
+    --light: #F1F1F1;
+    --label: #111;
+}
+
+body {
+    background-color: var(--dark);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.troca .mudanca:checked {
+    background-image: url("/assets/moon.svg");
+    background-position: left center, 4% 50%;
+}
+
+.troca .mudanca {
+    width: 15em;
+    height: 5em;
+    background-image:url("/assets/sun.svg");
+    background-position: right center, 95% 50%;
+    background-size: 4em, 3em;
+    border-radius: 5em;
+    transition: background-position .8s;
+    
+}
+
+
+.mudanca {
+    background-color: var(--label);
+    background-repeat: no-repeat;
+    appearance: none;
+}
